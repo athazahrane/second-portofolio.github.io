@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar&hero -->
+    <main>
+        <div class="container">
+            <div class="navbar sticky-top">
+                <nav class="sticky-top">
+                    <div class="logo">
+                        <h2>Portofolio</h2>
+                    </div>
+                    <ul class="d-flex">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="icon-social-media">
+                        <a href="https://www.instagram.com/athazahrane/" class="text-decoration-none"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61551518870905" class="text-decoration-none"><i class="bi bi-facebook"></i></a>
+                        <a href="https://github.com/athazahrane" class="text-decoration-none"><i class="bi bi-github"></i></a>
+                    </div>
+                    <div class="menu-toggle">
+                        <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+            <!-- hero -->
+            <div class="row">
+                <div class="col-6">
+                    <img src="img/me-removebg-preview - Copy.png" alt="">
+                </div>
+                <div class="col-6 text-light" id="home">
+                    <h5>UI/UX <span>Designer</span></h5>
+                    <h1>Hello everyone, my name is</h1>
+                    <h2>Elang Atha Zahran</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, mollitia corporis illum quibusdam
+                        unde veniam et odio illo, nesciunt voluptatum ipsam facilis perferendis non amet eos blanditiis.
+                        Pariatur, molestiae dignissimos.
+                    </p>
+                    <div class="btn">
+                        <button type="submit">Contact me</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- about section-->
+            <section class="about" id="about">
+                <div class="title-about d-flex justify-content-center mb-5">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <!-- <div class="about-links ">
+                            <ul class="d-flex justify-content-space-between">
+                                <li><a href="#" class="text-decoration-none">About Me</a></li>
+                                <li><a href="#" class="text-decoration-none">Skills</a></li>
+                                <li><a href="#" class="text-decoration-none">Social Media</a></li>
+                            </ul>
+                        </div>
+                        <div class="content text-light">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet praesentium velit cum
+                                consectetur veniam deleniti perferendis obcaecati autem aperiam voluptates minima iste
+                                blanditiis similique, quod aut quidem exercitationem odit, officiis facere dignissimos
+                                ab necessitatibus! Explicabo magni nulla, natus nisi dolorem doloremque temporibus
+                                ratione ducimus harum animi, qui debitis ullam facere?
+                            </p>
+                        </div> -->
+                        <div class="mytabs">
+                            <input type="radio" name="mytabs" id="tabfree" checked="checked">
+                            <label for="tabfree">About</label>
+                            <div class="tab text-light">
+                                <h2>About me</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ea sed 
+                                    incidunt unde voluptates nulla maxime enim sequi officia aut, vitae saepe hic vel 
+                                    laborum iste veniam, facilis atque suscipit!
+                                </p>
+                            </div>
+                        
+                            <input type="radio" name="mytabs" id="tabsilver">
+                            <label for="tabsilver">Skills</label>
+                            <div class="tab text-light">
+                                <h2>I have several skills, including:</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ea sed 
+                                    incidunt unde voluptates nulla maxime enim sequi officia aut, vitae saepe hic vel 
+                                    laborum iste veniam, facilis atque suscipit!
+                                </p>
+                            </div>
+                        
+                            <input type="radio" name="mytabs" id="tabgold">
+                            <label for="tabgold">Gold</label>
+                            <div class="tab text-light">
+                                <h2>You can stalk my sosmed on:</h2>
+                                <h5>Instagram: <a href="https://www.instagram.com/athazahrane/" class="text-decoration-none"> @athazahrane</a></h5>
+                                <h5>Facebook: <a href="" class="text-decoration-none"> athazahrane</a></h5>
+                                <h5>Github: <a href="" class="text-decoration-none"> athazahrane</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <img src="img/spiderman.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- end -->
+
+            <section class="projects" id="projects">
+                <div class="title-project d-flex justify-content-center mb-5">
+                    <h1>My Projects</h1>
+                </div>
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-4">
+                            <img src="img/project1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/project2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/project3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-4">
+                            <img src="img/project2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/project3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/project1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-4">
+                            <img src="img/project3.jpg" alt=""  style="width: 400px;">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/project1.jpg" alt=""  style="width: 400px;">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/project2.jpg" alt=""  style="width: 400px;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end -->
+
+            <!-- Contact Me -->
+            <section class="contact" id="contact">
+                <div class="title-contact text-center mb-5">
+                    <h1>Contact Me!</h1>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="email" class="from-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="username" class="from-control" placeholder="Username">
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+        <!-- end -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

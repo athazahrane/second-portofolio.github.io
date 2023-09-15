@@ -1,0 +1,310 @@
+:root {
+    --lightred: rgb(245, 94, 94);
+    --redolder: rgb(212, 42, 42);
+    --light: rgb(255, 255, 255);
+    --bodycolor: rgb(31, 29, 29);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(31, 29, 29);
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo h2 {
+    color: var(--lightred);
+}
+nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+nav li {
+    list-style: none;
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: var(--lightred);
+}
+.icon-social-media {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-social-media i {
+    font-size: 25px;
+    margin: 0 10px;
+    color: var(--lightred);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.icon-social-media i:hover {
+    color: var(--redolder);
+}
+.menu-toggle {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 30px;
+    height: 27px;
+    margin-top: -2px;
+    margin-left: -1px;
+    opacity: 0;
+    z-index: 2;
+}
+.menu-toggle span {
+    transition: all 0.5s ease;
+}
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+/* resposive navbar */
+@media screen and (max-width: 992px) {
+    nav {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 576px) {
+    nav ul,
+    nav li{
+        display: none;
+    }
+    nav {
+        justify-content: end;
+        width: max-content;
+    }
+    .menu-toggle span {
+        width: 28px;
+        height: 3px;
+        background-color: white;
+    }
+}
+
+/* Hero */
+.row .col-6 img {
+    margin-left: -170px;
+    animation: imageAnimation 1s ease;
+}
+.row .col-6 h5 span {
+    color: var(--lightred);
+}
+.row h2 {
+    color: var(--lightred);
+}
+.col-6:last-child {
+    margin-left: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: heroTextAnimation 1s ease;
+}
+.btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.row button {
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--lightred);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: white;
+}
+.row button:hover {
+    transform: scale(1.1);
+    background-color: var(--redolder);
+}
+
+/* Hero animation */
+@keyframes imageAnimation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes heroTextAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* end */
+
+/* about */
+section.about {
+    width: 90%;
+    margin: 150px auto;
+}
+section.about .title-about h1 {
+    color: var(--lightred);
+}
+section.about .about-links {
+    width: 400px;
+    justify-content: space-between;
+}
+section.about li {
+    list-style: none;
+    margin: 0 20px;
+}
+section.about a {
+    color: var(--light);
+    transition: all 0.3s ease;
+}
+section.about a:hover {
+    color: var(--lightred);
+}
+.section.about .content {
+    color: var(--light);
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.mytabs input[type="radio"] {
+    display: none;
+}
+
+.mytabs label {
+    padding: 25px; 
+    background: var(--bodycolor);
+    font-weight: bold;
+    color: var(--lightred);
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: var(--bodycolor);
+    order: 1;
+    display: none;
+}
+
+.h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background-color: var(--bodycolor);
+    border-bottom: 1px solid var(--lightred);
+}
+section.about .col-5 img {
+    height: 400px;
+    width: 540px;
+    object-fit: cover;
+}
+/* end */
+
+/* My Projects */
+section.projects .row {
+    display: flex;
+    justify-content: center;
+}
+section.projects .title-project h1 {
+    color: var(--lightred);
+}
+section.projects img {
+    width: 400px;
+    transition: all 0.4s ease;
+}
+section.projects img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 3px 5px var(--redolder);
+}
+/* end */
+
+/* Contact Me */
+section.contact .title-contact h1 {
+    color: var(--lightred);
+}
+section.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.form input {
+    width: 600px;
+    height: 40px;
+    border: none;
+    padding: 15px;
+    outline: none;
+    border-bottom: 1px solid var(--lightred);
+    background-color: var(--bodycolor);
+    color: white;
+}
+textarea {
+    width: 600px;
+    padding: 20px;
+    outline: none;
+}
+section.contact form button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: var(--light);
+    background-color: var(--lightred);
+    transition: all 0.3s ease;
+    margin: 40px auto;
+    cursor: pointer;
+}
+section.contact form button:hover {
+    transform: scale(1.1);
+    background-color: #e71414;
+}
