@@ -105,12 +105,15 @@ nav a:hover {
 }
 @media screen and (max-width: 576px) {
     nav ul,
-    nav li{
+    nav li {
         display: none;
     }
     nav {
         justify-content: end;
         width: max-content;
+    }
+    nav .icon-social-media {
+        visibility: hidden;
     }
     .menu-toggle span {
         width: 28px;
@@ -175,6 +178,51 @@ nav a:hover {
         transform: translateX(0);
     }
 }
+
+/* responsive hero */
+@media screen and (max-width: 1144px) {
+    .row .col-6 img {
+        margin-left: -200px;
+    }
+    .col-6:last-child {
+        margin: 0 -100px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .row .col-6 img {
+        margin-left: -250px;
+    }
+    .col-6:last-child {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .row .col-6 img {
+        margin: 0;
+        margin-left: -250px;
+    }
+    .col-6:last-child {
+        margin-top: 100px;
+        width: 700px;
+        text-align: center;
+    }
+    .row button {
+        margin-left: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .row .col-6 img {
+        margin-left: -130px;
+        width: 400px;
+    }
+    .col-6:last-child {
+        margin-top: 0px;
+    }
+}
+
 /* end */
 
 /* about */
@@ -209,6 +257,7 @@ section.about a:hover {
     max-width: 600px;
     margin: 50px auto;
     padding: 25px;
+    margin-left: -100px;
 }
 
 .mytabs input[type="radio"] {
@@ -243,10 +292,46 @@ section.about a:hover {
     border-bottom: 1px solid var(--lightred);
 }
 section.about .col-5 img {
-    height: 400px;
-    width: 540px;
+    height: auto;
+    max-width: 450px;
     object-fit: cover;
+    margin-left: -100px;
+    margin: 90px auto;
 }
+
+/* responsive about */
+@media screen and (max-width: 1144px) {
+    section.about .col-5 img {
+        width: 450px;
+        height: auto;
+        margin: 70px auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    section.about .col-5 img {
+        width: 350px;
+        margin: 90px auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    section.about .col-5 img {
+        width: 500px;
+        margin: 0;
+        margin-left: -280px;
+    }
+    .mytabs {
+        margin-top: 300px;
+        width: max-content;
+    }
+}
+@media screen and (max-width: 576px) {
+    .mytabs {
+        margin-top: 300px;
+        margin-left: 0;
+        width: 500px;
+    }
+}
+
 /* end */
 
 /* My Projects */
